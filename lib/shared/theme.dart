@@ -10,6 +10,9 @@ Color kRedColor = Color(0xffEB70A5);
 Color kBackgroundColor = Color(0xffFAFAFA);
 Color kInactiveColor = Color(0xffDBD7EC);
 
+double defaultMargin = 24.0;
+double defaultRadius = 17.0;
+
 // Text Style
 
 TextStyle blackTextStyle = GoogleFonts.poppins(
