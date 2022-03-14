@@ -6,8 +6,24 @@ class MainPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Widget customBottomNavigation() {
+      return Align(
+        alignment: Alignment.bottomCenter,
+        child: Container(
+          width: double.infinity,
+          height: 60,
+          color: Colors.red,
+        ),
+      );
+    }
+
     return Scaffold(
-      body: Text('Home Page'),
+      body: Stack(
+        children: [
+          Text('Main Page'),
+          customBottomNavigation(),
+        ],
+      ),
     );
   }
 }
